@@ -17,67 +17,71 @@ export const mainStyles = css`
     min-height: 100dvh;
   }
 
-  .submenu {
-    background-color: var(--dark-violet);
-    border-right: 0.063rem solid var(--dark-grey);
+  .content {
+    padding: .938rem 4rem;
   }
 
-  .submenu__title {
-    position: relative;
-    font-size: 1rem;
-    color: var(--white);
-    font-weight: 600;
-    padding: 0.938rem;
-    min-height: 2.625rem;
+  .content__header {
     display: flex;
+    padding-bottom: 2.625rem;
     align-items: center;
   }
 
-  .submenu__title::after {
-    display: block;
-    position: absolute;
-    left: 1.25rem;
-    bottom: -0.063rem;
-    content: '';
-    width: 1.25rem;
-    height: 0.063rem;
-    background-color: var(--dark-grey);
+  .content__header h1 {
+    font-size: 2rem;
   }
 
-  .submenu__wrapper {
+  .content__header p {
+    color: var(--grey);
+  }
+
+  .content__header button {
+    margin-left: auto;
+    background-color: var(--main-btns);
+    color: var(--white);
+    border: 0 none;
     display: flex;
     gap: .5rem;
-    flex-direction: column;
-    list-style: none;
-    padding: 0.938rem;
-  }
-
-  .submenu__wrapper__title {
-    font-size: 0.875rem;
-    color: var(--grey);
-    font-weight: 600;
-  }
-
-  .submenu__wrapper__item {
-    display: flex;
-    font-size: 0.875rem;
-    color: var(--white);
-    gap: 1rem;
-    margin-left: 1rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    justify-content: center;
     align-items: center;
+    font-weight: 600;
+    border-radius: .188rem;
+    cursor: pointer;
   }
 
-  .submenu__wrapper__item a {
-    color: var(--white);
+  .content__wrapper {
+    background-color: var(--light-violet);
+    border: .063rem solid var(--dark-grey);
+    border-radius: .188rem;
+    padding: 0 1rem;
+  }
+
+  .content__row {
+    display: flex;
+    padding: 1rem;
+    color: white;
+    border-bottom: 0.063rem solid var(--dark-grey);
     text-decoration: none;
   }
 
-  .submenu__wrapper__item::before {
-    display: block;
-    content: '';
-    width: 5px;
-    height: 5px;
-    border-radius: 100%;
-    background-color: var(--white);
+  .content__row--title {
+    font-weight: 600;
+    font-size: 11px;
+    color: var(--grey);
+  }
+
+  .content__row:last-child {
+    border: 0 none;
+  }
+
+  .content__row__id {
+    width: 10%;
+  }
+
+  .content__row__title,
+  .content__row__slug {
+    width: 45%;
   }
 `

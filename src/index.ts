@@ -8,28 +8,28 @@ const routes = [
     component: 'lit-app',
     children: [
       {
-        path: 'blog',
-        component: 'lit-blog',
+        path: 'content-manager',
+        component: 'lit-content-manager',
         action: async () => {
-          await import('./blog/blog.js')
+          await import('./content-manager/content-manager.js')
         },
         children: [
           {
             path: '',
-            redirect: '/blog/posts',
+            redirect: '/content-manager/types',
           },
           {
-            path: 'posts',
-            component: 'lit-blog-posts',
+            path: 'types',
+            component: 'lit-content-manager-posts',
             action: async () => {
-              await import('./blog/blog-posts.js')
+              await import('./content-manager/content-manager-posts.js')
             },
           },
           {
-            path: 'posts/:id',
-            component: 'lit-blog-post',
+            path: 'types/:id',
+            component: 'lit-content-manager-post',
             action: async () => {
-              await import('./blog/blog-post.js')
+              await import('./content-manager/content-manager-post.js')
             },
           },
         ]
@@ -40,19 +40,6 @@ const routes = [
         action: async () => {
           await import('./content-type/content-type.js')
         },
-      },
-      {
-        path: 'content-manager',
-        component: 'lit-content-manager',
-        action: async () => {
-          await import('./content-manager/content-manager.js')
-        },
-        // children: [
-        //   {
-        //     path: '',
-        //     redirect: '/content-manager',
-        //   }
-        // ]
       },
     ]
   },
