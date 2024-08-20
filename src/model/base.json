@@ -1,0 +1,39 @@
+{
+  "contentManager": [
+    {
+      "id": "collections",
+      "title": "Collections types",
+      "items": [
+        {
+          "id": "page",
+          "title": "page",
+          "entries": [
+            {
+              "id": 1,
+              "title": "First page",
+              "slug": "first-page"
+            },
+            {
+              "id": 2,
+              "title": "Second page",
+              "slug": "second-page"
+            }
+          ],
+          "config": [] 
+        }
+      ]
+    },
+    {
+      "id": "single",
+      "title": "Single types",
+      "items": [
+        {
+          "id": "global",
+          "title": "Global",
+          "entries": [],
+          "config": [] 
+        }
+      ]
+    }
+  ]
+}

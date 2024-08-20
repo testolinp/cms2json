@@ -13,6 +13,7 @@ export const mainAsideStyles = css`
     grid-template-columns: 1.875rem 1fr;
     gap: 1rem;
     border-bottom: 0.063rem solid var(--dark-grey);
+    text-decoration: none;
   }
 
   .lg__image {

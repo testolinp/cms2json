@@ -3,7 +3,17 @@ import { css } from 'lit'
 export const mainStyles = css`
   .layout {
     display: grid;
-    grid-template-columns: 16% 16% 1fr;
+    grid-template-columns: 16% 1fr;
+    min-height: 100dvh;
+  }
+
+  .main {
+    background-color: var(--dark-violet);
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: 16% 1fr;
     min-height: 100dvh;
   }
 
@@ -17,7 +27,7 @@ export const mainStyles = css`
     font-size: 1rem;
     color: var(--white);
     font-weight: 600;
-    padding: 1.25rem;
+    padding: 0.938rem;
     min-height: 2.625rem;
     display: flex;
     align-items: center;
@@ -34,7 +44,40 @@ export const mainStyles = css`
     background-color: var(--dark-grey);
   }
 
-  .main {
-    background-color: var(--dark-violet);
+  .submenu__wrapper {
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+    list-style: none;
+    padding: 0.938rem;
+  }
+
+  .submenu__wrapper__title {
+    font-size: 0.875rem;
+    color: var(--grey);
+    font-weight: 600;
+  }
+
+  .submenu__wrapper__item {
+    display: flex;
+    font-size: 0.875rem;
+    color: var(--white);
+    gap: 1rem;
+    margin-left: 1rem;
+    align-items: center;
+  }
+
+  .submenu__wrapper__item a {
+    color: var(--white);
+    text-decoration: none;
+  }
+
+  .submenu__wrapper__item::before {
+    display: block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    border-radius: 100%;
+    background-color: var(--white);
   }
 `

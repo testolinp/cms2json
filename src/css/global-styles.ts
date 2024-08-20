@@ -13,4 +13,8 @@ export const globalStyles = css`
     --main-btns: #7b79ff;
   }
 
+  h1 {
+    color: white;
+  }
+
 `
