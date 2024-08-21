@@ -6,7 +6,7 @@
       "items": [
         {
           "id": "page",
-          "title": "page",
+          "title": "Page",
           "entries": [
             {
               "id": 1,
@@ -30,7 +30,8 @@
         {
           "id": "global",
           "title": "Global",
-          "entries": [],
+          "entries": [
+          ],
           "config": [] 
         }
       ]
